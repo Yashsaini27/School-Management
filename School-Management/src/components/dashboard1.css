@@ -1,0 +1,56 @@
+/* StudentDashboard.css */
+
+/* Dashboard container */
+.flex {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .bg-gray-800 {
+    background-color: #2c3e50; /* Dark gray background */
+    color: #fff; /* White text */
+    width: 240px; /* Sidebar width */
+    padding: 20px; /* Sidebar padding */
+  }
+  
+  /* Sidebar heading */
+  .text-2xl {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Bottom margin */
+  }
+  
+  /* Sidebar links */
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Sidebar link items */
+  li {
+    margin-bottom: 10px; /* Bottom margin between links */
+  }
+  
+  /* Sidebar link style */
+  .text-blue-500 {
+    color: #3498db; /* Blue text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Sidebar link hover effect */
+  .text-blue-500:hover {
+    color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Content area */
+  .flex-grow {
+    flex-grow: 1; /* Allow content area to grow */
+    padding: 20px; /* Content area padding */
+  }
+  
+  /* Content area routes */
+  Routes {
+    display: flex; /* Display routes in a row */
+    flex-grow: 1; /* Allow routes to grow */
+  }
+  

@@ -1,0 +1,71 @@
+/* parent.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  }
+  
+  .NavContainer {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .NavList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .NavItem {
+    margin: 0 1.5rem;
+  }
+  
+  .NavLink {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .NavLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .NavLink:hover {
+    color: #007BFF;
+  }
+  
+  .NavLink:hover::after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .NavList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .NavItem {
+      margin: 0.5rem 0;
+    }
+  }
+  

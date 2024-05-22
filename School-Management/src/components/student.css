@@ -1,0 +1,64 @@
+/* Student.css */
+
+.StudentContainer {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .FormContainer {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .FormTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .FormInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .FormButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .FormButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .ToggleButton {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #007bff;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .ToggleButton:hover {
+    text-decoration: underline;
+  }
+  

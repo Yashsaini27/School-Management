@@ -1,0 +1,33 @@
+/* ContactUs.css */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 32px;
+  }
+  
+  .contact-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .contact-info {
+    font-size: 16px;
+  }
+  
+  .contact-text {
+    margin-bottom: 8px;
+  }
+  
+  .contact-label {
+    font-weight: 600;
+  }
+  
