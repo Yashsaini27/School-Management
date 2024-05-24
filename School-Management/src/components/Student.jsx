@@ -18,7 +18,7 @@ function Student() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/stud/login', {
+      const response = await axios.post('https://school-management-server-d308.onrender.com/stud/login', {
         email: loginEmail,
         password: loginPassword
       });
@@ -37,7 +37,7 @@ function Student() {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:3000/stud/register', {
+      const response = await axios.post('https://school-management-server-d308.onrender.com/stud/register', {
         email: registerEmail,
         password: registerPassword,
         confirmpassword:confirmPassword,
