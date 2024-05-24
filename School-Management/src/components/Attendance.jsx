@@ -19,7 +19,7 @@ function Attendance() {
     }, []);
 
     const fetchAttendances = async () => {
-        const res = await axios.get('http://localhost:3000/atten/attendance');
+        const res = await axios.get('https://school-management-server-d308.onrender.com/atten/attendance');
         setAttendances(res.data);
     };
 
@@ -30,11 +30,11 @@ function Attendance() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (isEditing) {
-            await axios.put(`http://localhost:3000/atten/attendance/${currentId}`, formData);
+            await axios.put(`https://school-management-server-d308.onrender.com/atten/attendance/${currentId}`, formData);
             setIsEditing(false);
             setCurrentId(null);
         } else {
-            await axios.post('http://localhost:3000/atten/attendance', formData);
+            await axios.post('https://school-management-server-d308.onrender.com/atten/attendance', formData);
         }
         setFormData({ name: '', class: '', attendance_status: 'Present', date: '' });
         fetchAttendances();
@@ -47,7 +47,7 @@ function Attendance() {
     };
 
     const handleDelete = async (id) => {
-        await axios.delete(`http://localhost:3000/atten/attendance/${id}`);
+        await axios.delete(`https://school-management-server-d308.onrender.com/atten/attendance/${id}`);
         fetchAttendances();
     };
 
