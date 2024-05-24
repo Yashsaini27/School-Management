@@ -17,7 +17,7 @@ const Query = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3000/querry/student-query', formData); // Corrected endpoint URL
+            await axios.post('https://school-management-server-d308.onrender.com/querry/student-query', formData); // Corrected endpoint URL
             alert('Query submitted successfully!');
             setFormData({ name: '', email: '', message: '', date:'' });
         } catch (error) {
