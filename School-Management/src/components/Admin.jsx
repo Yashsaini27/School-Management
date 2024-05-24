@@ -17,7 +17,7 @@ function Admin() {
 
   const handleSubmit = (e) => {
      event.preventDefault()
-     axios.post('http://localhost:3000/auth/adminlogin',values)
+     axios.post('https://school-management-server-d308.onrender.com/auth/adminlogin',values)
      .then(result=>{
       if(result.data.loginStatus)
         {
