@@ -16,7 +16,7 @@ const EnquiryForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:3000/pare/enquiries', formData);
+        await axios.post('https://school-management-server-d308.onrender.com/pare/enquiries', formData);
         setFormData({ name: '', email: '', message: '',date:'' });
     };
 
