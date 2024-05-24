@@ -25,7 +25,7 @@ const Institutions = () => {
     const fetchSchools = async () => {
         setLoading(true);
         try {
-            const res = await axios.get(`http://localhost:3000/home/institutions?type=universities`);
+            const res = await axios.get(`https://school-management-server-d308.onrender.com/home/institutions?type=universities`);
             setInstitutions(res.data);
             setLoading(false);
         } catch (err) {
