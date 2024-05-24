@@ -13,7 +13,7 @@ const StaffQuery = () => {
 
     const fetchStudentQueries = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/staff1/student-queries');
+            const response = await axios.get('https://school-management-server-d308.onrender.com/staff1/student-queries');
             setQueries(response.data);
         } catch (error) {
             console.error('Error fetching student queries:', error);
